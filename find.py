@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 # Load the video capture object
-cap = cv2.VideoCapture("Coen.mp4")
+cap = cv2.VideoCapture(0)
 
 while True:
     # Capture the current frame

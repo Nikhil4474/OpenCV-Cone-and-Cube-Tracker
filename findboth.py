@@ -16,11 +16,11 @@ while True:
     hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
 
     # Define the range of orange color in HSV
-    lower_orange = np.array([5, 50, 50])
-    upper_orange = np.array([15, 255, 255])
+    lower_yellow = np.array([20, 100, 100])
+    upper_yellow = np.array([30, 255, 255])
 
     # Threshold the frame to get only orange colors
-    mask_orange = cv2.inRange(hsv, lower_orange, upper_orange)
+    mask_orange = cv2.inRange(hsv, lower_yellow, upper_yellow)
 
     # Find the contours in the frame
     # contours, _ = cv2.findContours(
